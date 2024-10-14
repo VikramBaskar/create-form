@@ -1,0 +1,63 @@
+*{
+    box-sizing: content-box;
+   
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(135, 212, 212);
+}
+.E1_form{
+    display: flex;
+    justify-content: center;
+  padding-right: 25%;
+    align-items: center;
+    min-height: 30px;
+    border: 10px;
+}
+#h2{
+    display: flex;
+    justify-content: center;
+    padding-right: 60%;
+    border-radius: 20px;
+    background-color: chocolate;
+    overflow: hidden;
+    
+}
+
+input[type= text]{
+    width: 75%;
+    padding: 6px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background-color: aliceblue;
+}
+input[type=Age]{
+    width: 20%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: aliceblue;
+}
+h1{
+    padding: 30%;
+    margin: 5px 0 22px 0;
+    display: inline;
+    border-radius: 5%;
+    text-shadow: 5%;
+    text-align: center;
+    text-wrap: 12px;
+}
+a{
+    color: rgb(216, 138, 64);
+}
+input[type=number]{
+    width: 30%;
+    padding: 5px;
+    margin: 5px 0px ;
+     display: inline-block;
+     border: none;
+     background-color: aliceblue;
+}
+

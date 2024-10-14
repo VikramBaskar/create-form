@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+ <link rel="stylesheet" href="./emp.css"> 
+
+</head>
+
+<body>
+    <h1 >EMPLOYEE FORM</h1>
+<h2 id="h2" >GENERAL INFORMATION</h2>
+<div class="E1_form">
+    <form action="/action_page.php">
+        <label for="Fname">First Name<label><br>
+            <input type="text" id="Fname" name="Fname" placeholder="First Name"><br>
+            <label for="Lname">Last Name</label><br>
+            <input type="text" id="Lname" name="Lname" placeholder="Last Name"><br>
+            <label for="Pname">Parent/Gaurden</label><br>
+            <input type="text" name="Pname" id="Pname" placeholder="Enter The Name"><br>
+            <label for="Age">Age</label><br>
+            <input type="age" name="Age" id="Age" placeholder="Enter Age"><br>
+            <label for="Gender">Choose your Gender</label><br> 
+            <input type="radio" name="Gender" id="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="Female" id="Female" value="Female">
+            <label for="female">Female</label><br>
+            <div class="Education_Details"><br>
+            <label for="Education">Education Details</label><br><br>
+            <label for="Secedu">Secondary Education</label><br>
+            <input type="number" name="Secedu" id="Secedu" placeholder="Enter your score" required><br><br>
+            <label for="hrsec">Higher Secondary</label><br>
+            <input type="number" name="hrsec" id="hrsec" placeholder="Enter your score" required><br><br>
+            <label for="degree">Under Graudation</label><br>
+            <input type="text" name="degree" id="degree" placeholder="Enter your UG Degree" required><br>
+            <label for="degsc">UG Score</label><br>
+            <input type="number" name="degsc" id="degsc" placeholder="Enter your score" required><br>
+            <label for="pgdegree">PG Graudation</label><br>
+            <input type="text" name="pgdegree" id="pgdegree" placeholder="Enter your PG degree"> <br>
+            <label for="pgscore">PG Score</label><br>
+            <input type="number" name="pgscore" id="pgscore" placeholder="Enter your score" ><br>
+        </div>
+        <div class="Address_detail">
+            <label for="Address">Address Details</label><br>
+          <label for="add1">Primary Address</label><br>
+          <textarea name="add1" id="add1" placeholder="Enter Primary Address" required></textarea><br>
+          <label for="add2">Secondary Add</label><br>
+          <textarea name="add2" id="add2" placeholder="Enter Secondary Address" required></textarea><br>
+        </div>
+          <label for="Email"><b>Email Id</b></label>
+          <input type="text" name="Email" id="Email" placeholder="Enter Email Id" required>
+          <hr>
+          <p>Creating an Account are you agree to our <a href="#">OurTerms & Policy</a>.</p>
+          <button type="submit">Submit</button>
+          <button type="cancel">Cancel</button>
+          <div class="container signin">
+            <p>Already have an account? <a href="#">SignIn</a>.</p>
+          </div>
+    </form>
+
+</div>
+
+</body>
+</html>
