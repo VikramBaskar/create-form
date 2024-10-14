@@ -7,35 +7,36 @@
     <script src="./base.js"></script>
     <link rel="stylesheet" href="./base.css">
 </head>
-<h1>GENERAL DETALIS</h1>
+<h1>Basic Form</h1>
+<h2>GENERAL DETAILS</h2>
 <body>
     <div class="newform">
-    <form action="/action_page.php" >
+    <form action="/action_page.php">
       
         <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+        <input type="text" id="fname" name="fname" placeholder="First Name" onchange="validate()" required><br>
         <label for="mname">Middle Name</label><br>
-        <input type="text" id="mname" name="mname" placeholder="Middle Name"><br>
+        <input type="text" id="mname" name="mname" placeholder="Middle Name" onchange="midnamevalidate()" ><br>
         <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" onchange="compare()" required><br>
         <label for="ptname">Parent /Gaurden Name</label><br>
-        <input type="text" id="ptname" name="ptname" placeholder="Enter Parent /Gaurden Name"><br>
+        <input type="text" id="ptname" name="ptname" placeholder="Enter Parent /Gaurden Name" onchange="parentfieldvalidate()" required><br>
         <label for="age">AGE</label><br>
-        <input type="number" id="age" name="age" placeholder="Enter Age"><br>
-        <p>Choose Your Gender</p>
-        <input type="radio" id="male" name="male" value="Male">
+        <input type="number" id="age" name="age" placeholder="Enter Age" required><br><br>
+        <label >Choose Your Gender</label><br>
+        <input type="radio" id="MALE" name="Gender" value="Male">
         <label for="male">MALE</label><br>
-        <input type="radio" id="female" name="female" value="Female">
+        <input type="radio" id="Female" name="Gender" value="Female">
         <label for="female">Female</label><br>
         <br>
         <label for="add">ADDRESS</label><br>
-        <input type="text" name="add" id="add" placeholder="Enter Address"><br>
+        <textarea type="text" name="add" id="add" placeholder="Enter Address"  required ></textarea> <br>
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" id="email" required>
         <hr>
-        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-        <button type="submit" class="registerbtn">Register</button>
-        <button type="cancel" class="cancelbtn">Cancel</button>
+        <p>creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn" form="registerbtn" onclick="btnvalidate()">Submit</button>
+        <button type="cancel" class="cancelbtn" form="cancelbtn">Cancel</button>
         <div class="container signin">
             <p>Already have an account? <a href="#">Sign in</a>.</p>
           </div>
